@@ -1,0 +1,14 @@
+list:
+  handler: src/handlers/hello.handler
+  events:
+    - http: 
+       method: get 
+       path: /hello
+       authorizer: 
+        name: authorizer
+get:
+  handler: src/handlers/hello2.handler
+  events:
+    - http: get /hello/{id}
+authorizer:
+    handler: src/handlers/auth.handler

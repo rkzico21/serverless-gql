@@ -1,0 +1,16 @@
+addStory:
+  handler: src/handlers/story/add.handler
+  events:
+    - http: 
+       method: post 
+       path: /story
+       #authorizer: 
+       #name: authorizer
+graphql:
+  handler: src/handlers/story/graphql.handler
+  events:
+    - http: 
+       method: post 
+       path: /story/graphql
+       #authorizer: 
+       #name: authorizer

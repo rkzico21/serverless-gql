@@ -1,0 +1,16 @@
+todolist:
+  handler: src/handlers/todolist/list.handler
+  events:
+    - http: 
+       method: get 
+       path: /todolist
+       #authorizer: 
+        #name: authorizer
+add:
+  handler: src/handlers/todolist/add.handler
+  events:
+    - http: 
+       method: post 
+       path: /todolist
+       #authorizer: 
+       #name: authorizer 

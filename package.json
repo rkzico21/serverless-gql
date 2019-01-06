@@ -1,0 +1,25 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "sample nodejs serverless app",
+  "dependencies": {
+    "aws-sdk": "^2.382.0",
+    "cognito-jwt-verifier": "^1.0.0",
+    "dotenv": "^6.2.0",
+    "graphql": "^14.0.2",
+    "jsonwebtoken": "^8.4.0",
+    "serverless-dynamodb-local": "^0.2.35"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0",
+    "serverless-offline": "^3.31.3"
+  },
+  "scripts": {
+    "sls": "serverless",
+    "start": "sls offline start",
+    "deploy": "serverless deploy --aws-profile serverless",
+    "package": "serverless package"
+  },
+  "author": "Rashed Kibria",
+  "license": "ISC"
+}
