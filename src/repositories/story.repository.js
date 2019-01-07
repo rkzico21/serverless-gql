@@ -27,7 +27,6 @@ class StoryRepository {
   async put(story) {
     const params = this._createParamObject({ Item: story });
     await this._documentClient.put(params).promise();
-
     return story;
   }
 

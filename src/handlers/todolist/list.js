@@ -12,10 +12,9 @@ module.exports.handler = async (event, context) => {
     const todolist = await repository.list();
   
     return {
-    statusCode: 200,
-    body: JSON.stringify({
-      todolist
-    }),
+      statusCode: 200,
+      body: JSON.stringify({
+        todolist
+      }),
   };
-
 };
